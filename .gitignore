@@ -1,0 +1,8 @@
+# Lokale Arbeitsdateien
+.DS_Store
+*.tmp
+*.log
+
+# Keine Secrets oder echten Mandatsdaten ablegen.
+secrets/
+private/
