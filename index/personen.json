@@ -1,0 +1,26 @@
+{
+  "schema_version": "nac.index-persons/v0.1",
+  "persons": [
+    {
+      "person_id": "PER-DEMO-NOTAR-OFUNK",
+      "display_name": "Notar Dr. Otto Funk",
+      "roles": [
+        "notary"
+      ]
+    },
+    {
+      "person_id": "PER-DEMO-VERKAEUFER-ANNA-BERGER",
+      "display_name": "Anna Berger",
+      "roles": [
+        "seller"
+      ]
+    },
+    {
+      "person_id": "PER-DEMO-KAEUFER-BEN-LANGE",
+      "display_name": "Ben Lange",
+      "roles": [
+        "buyer"
+      ]
+    }
+  ]
+}
