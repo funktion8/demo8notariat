@@ -1,0 +1,14 @@
+{
+  "schema_version": "nac.person/v0.1",
+  "person_id": "PER-DEMO-NOTAR-OFUNK",
+  "type": "natural_person",
+  "display_name": "Notar Dr. Otto Funk",
+  "names": {
+    "given": "Otto",
+    "family": "Funk"
+  },
+  "roles": [
+    "notary"
+  ],
+  "data_classification": "synthetic_personal_data"
+}
