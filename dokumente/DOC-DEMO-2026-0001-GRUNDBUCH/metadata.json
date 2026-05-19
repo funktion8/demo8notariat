@@ -1,0 +1,18 @@
+{
+  "schema_version": "nac.document/v0.1",
+  "document_id": "DOC-DEMO-2026-0001-GRUNDBUCH",
+  "matter_id": "UVZ-2026-0001",
+  "title": "Grundbuchauszug Demo",
+  "document_type": "grundbuchauszug",
+  "media_type": "application/pdf",
+  "data_classification": "synthetic_register_extract",
+  "subject_person_ids": [
+    "PER-DEMO-VERKAEUFER-ANNA-BERGER",
+    "PER-DEMO-KAEUFER-BEN-LANGE"
+  ],
+  "storage": {
+    "original": "dokumente/DOC-DEMO-2026-0001-GRUNDBUCH/original/grundbuchauszug-demo.pdf.placeholder.txt",
+    "preview": "dokumente/DOC-DEMO-2026-0001-GRUNDBUCH/preview/grundbuchauszug-demo.jpg.placeholder.txt"
+  },
+  "created_at": "2026-05-19T15:36:59Z"
+}
