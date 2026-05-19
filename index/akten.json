@@ -1,0 +1,30 @@
+{
+  "schema_version": "nac.index-matters/v0.1",
+  "matters": [
+    {
+      "schema_version": "nac.matter/v0.1",
+      "matter_id": "UVZ-2026-0001",
+      "aktenzeichen": "UVZ 1/2026",
+      "title": "Immobilienkaufvertrag Berger/Lange",
+      "case_type": "immobilienkaufvertrag",
+      "status": "intake",
+      "opened_at": "2026-05-19T15:36:59Z",
+      "notary_person_id": "PER-DEMO-NOTAR-OFUNK",
+      "participant_person_ids": [
+        "PER-DEMO-VERKAEUFER-ANNA-BERGER",
+        "PER-DEMO-KAEUFER-BEN-LANGE"
+      ],
+      "document_ids": [
+        "DOC-DEMO-2026-0001-GRUNDBUCH",
+        "DOC-DEMO-2026-0001-AUSWEIS-VERKAEUFER"
+      ],
+      "event_log": "akten/2026/UVZ-2026-0001/ereignisse.jsonl",
+      "data_classification": "synthetic_full_case",
+      "pointers": {
+        "persons": "personen/<person_id>.json",
+        "documents": "dokumente/<document_id>/metadata.json",
+        "binary_files": "dokumente/<document_id>/original/*"
+      }
+    }
+  ]
+}
