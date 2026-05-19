@@ -1,0 +1,16 @@
+{
+  "schema_version": "nac.matter-documents/v0.1",
+  "matter_id": "UVZ-2026-0001",
+  "documents": [
+    {
+      "document_id": "DOC-DEMO-2026-0001-GRUNDBUCH",
+      "role": "source_document",
+      "status": "received"
+    },
+    {
+      "document_id": "DOC-DEMO-2026-0001-AUSWEIS-VERKAEUFER",
+      "role": "identity_evidence",
+      "status": "received"
+    }
+  ]
+}
