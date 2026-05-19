@@ -1,0 +1,14 @@
+{
+  "schema_version": "nac.person/v0.1",
+  "person_id": "PER-DEMO-VERKAEUFER-ANNA-BERGER",
+  "type": "natural_person",
+  "display_name": "Anna Berger",
+  "names": {
+    "given": "Anna",
+    "family": "Berger"
+  },
+  "roles": [
+    "seller"
+  ],
+  "data_classification": "synthetic_personal_data"
+}
