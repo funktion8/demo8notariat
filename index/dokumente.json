@@ -1,0 +1,17 @@
+{
+  "schema_version": "nac.index-documents/v0.1",
+  "documents": [
+    {
+      "document_id": "DOC-DEMO-2026-0001-GRUNDBUCH",
+      "matter_id": "UVZ-2026-0001",
+      "title": "Grundbuchauszug Demo",
+      "document_type": "grundbuchauszug"
+    },
+    {
+      "document_id": "DOC-DEMO-2026-0001-AUSWEIS-VERKAEUFER",
+      "matter_id": "UVZ-2026-0001",
+      "title": "Ausweiskopie Verkäuferin Demo",
+      "document_type": "id_document_scan"
+    }
+  ]
+}
