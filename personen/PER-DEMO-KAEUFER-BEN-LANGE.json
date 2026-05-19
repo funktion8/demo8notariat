@@ -1,0 +1,14 @@
+{
+  "schema_version": "nac.person/v0.1",
+  "person_id": "PER-DEMO-KAEUFER-BEN-LANGE",
+  "type": "natural_person",
+  "display_name": "Ben Lange",
+  "names": {
+    "given": "Ben",
+    "family": "Lange"
+  },
+  "roles": [
+    "buyer"
+  ],
+  "data_classification": "synthetic_personal_data"
+}
