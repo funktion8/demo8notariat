@@ -1,0 +1,13 @@
+{
+  "schema_version": "nac.office/v0.1",
+  "office_id": "NOT-DEMO-0001",
+  "name": "Demo-Notariat Funktion8",
+  "jurisdiction": "DE",
+  "notaries": [
+    {
+      "person_id": "PER-DEMO-NOTAR-OFUNK",
+      "display_name": "Notar Dr. Otto Funk",
+      "role": "notary"
+    }
+  ]
+}
