@@ -1,0 +1,3 @@
+Placeholder für Grundbuchauszug Demo (DOC-DEMO-2026-0001-GRUNDBUCH).
+In einer echten Produktivumgebung liegt hier die Binärdatei, zum Beispiel PDF oder JPG.
+Die Metadaten und Pointer stehen in metadata.json.
