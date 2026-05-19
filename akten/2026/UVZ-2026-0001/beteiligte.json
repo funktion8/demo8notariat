@@ -1,0 +1,21 @@
+{
+  "schema_version": "nac.matter-participants/v0.1",
+  "matter_id": "UVZ-2026-0001",
+  "participants": [
+    {
+      "person_id": "PER-DEMO-NOTAR-OFUNK",
+      "role": "notary",
+      "signing_required": true
+    },
+    {
+      "person_id": "PER-DEMO-VERKAEUFER-ANNA-BERGER",
+      "role": "seller",
+      "signing_required": true
+    },
+    {
+      "person_id": "PER-DEMO-KAEUFER-BEN-LANGE",
+      "role": "buyer",
+      "signing_required": true
+    }
+  ]
+}
