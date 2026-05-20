@@ -21,5 +21,29 @@
     "persons": "personen/<person_id>.json",
     "documents": "dokumente/<document_id>/metadata.json",
     "binary_files": "dokumente/<document_id>/original/*"
+  },
+  "workflow_binding": {
+    "schema_version": "nac.workflow-binding/v0.1",
+    "workflow_id": "immobilienkaufvertrag:kanzlei-standard",
+    "usecase_slug": "immobilienkaufvertrag",
+    "usecase_title": "Immobilienkaufvertrag Berger/Lange",
+    "workflow_version": "v1",
+    "workflow_revision_hash": "b52f600b2a9556c1",
+    "bound_at": "2026-05-19T15:36:59Z",
+    "approval_state": "approved_for_demo",
+    "binding_policy": "Akte bleibt auf dieser Workflow-Version, bis ein dokumentierter Versionswechsel erfasst wird.",
+    "new_matter_policy": "Neue Akten nutzen die aktuell freigegebene Kanzlei-Workflow-Version.",
+    "artifacts": [
+      {
+        "type": "bpmn",
+        "path": "bpmn/immobilienkaufvertrag.bpmn",
+        "sha256": "1496b457b027277193f47377e6e623c700d38f7db9183154b71ef34047475271"
+      },
+      {
+        "type": "checklist",
+        "path": "usecases/immobilienkaufvertrag/knowledge-graph.graph.json",
+        "sha256": "9bc96b288a99b3e2fef588f98404b62dca005570e9aa0a8e9871548521e130d0"
+      }
+    ]
   }
 }
