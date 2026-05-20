@@ -1,0 +1,46 @@
+{
+  "schema_version": "nac.document/v0.1",
+  "document_id": "DOC-UVZ-2026-0002-UNTERLAGE",
+  "matter_id": "UVZ-2026-0002",
+  "title": "Personalausweis zur Identitätsprüfung",
+  "document_type": "id_document_scan",
+  "media_type": "image/jpeg",
+  "data_classification": "synthetic_identity_document",
+  "subject_person_ids": [
+    "PER-UVZ-2026-0002-BETEILIGT"
+  ],
+  "storage": {
+    "originals": [
+      {
+        "label": "Vorderseite",
+        "path": "dokumente/DOC-UVZ-2026-0002-UNTERLAGE/original/personalausweis-erika-mustermann-vorderseite.jpg",
+        "media_type": "image/jpeg"
+      },
+      {
+        "label": "Rückseite",
+        "path": "dokumente/DOC-UVZ-2026-0002-UNTERLAGE/original/personalausweis-erika-mustermann-rueckseite.jpg",
+        "media_type": "image/jpeg"
+      }
+    ]
+  },
+  "created_at": "2026-05-20T05:08:10Z",
+  "extracted_metadata": {
+    "document_kind": "Personalausweis",
+    "document_number": "LZ6311T47",
+    "family_name": "Mustermann",
+    "birth_name": "Gabler",
+    "given_names": "Erika",
+    "date_of_birth": "1983-08-12",
+    "place_of_birth": "Berlin",
+    "nationality": "Deutsch",
+    "valid_until": "2034-05-01",
+    "address": "Heidestrasse, 51147 Köln",
+    "height_cm": 160,
+    "eye_color": "grün",
+    "issuing_authority": "Stadt Köln",
+    "issue_or_reference_date": "2024-05-02",
+    "mrz_document_code": "IDD",
+    "mrz_lines_present": true,
+    "manual_review_required": true
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "nac.matter/v0.2",
+  "matter_id": "UVZ-2026-0002",
+  "aktenzeichen": "UVZ 2/2026",
+  "title": "Unterschriftsbeglaubigung Erika Mustermann",
+  "case_type": "unterschriftsbeglaubigung",
+  "usecase_slug": "unterschriftsbeglaubigung",
+  "status": "open",
+  "status_reason": "Ausweisdaten aus synthetischem Testscan übernommen, manuelle Prüfung offen",
+  "owner_role": "notary_clerk",
+  "opened_at": "2026-05-20T05:08:10Z",
+  "updated_at": "2026-05-20T05:08:10Z",
+  "participant_person_ids": [
+    "PER-UVZ-2026-0002-MANDANT",
+    "PER-UVZ-2026-0002-BETEILIGT"
+  ],
+  "document_ids": [
+    "DOC-UVZ-2026-0002-UNTERLAGE"
+  ],
+  "event_log": "akten/2026/UVZ-2026-0002/ereignisse.jsonl",
+  "data_classification": "synthetic_full_case",
+  "guardrails": {
+    "real_mandate_data_allowed": false,
+    "pin_or_card_data_allowed": false,
+    "secrets_allowed": false
+  },
+  "pointers": {
+    "persons": "personen/<person_id>.json",
+    "documents": "dokumente/<document_id>/metadata.json",
+    "binary_files": "dokumente/<document_id>/original/*"
+  },
+  "workflow_binding": {
+    "schema_version": "nac.workflow-binding/v0.1",
+    "workflow_id": "unterschriftsbeglaubigung:kanzlei-standard",
+    "usecase_slug": "unterschriftsbeglaubigung",
+    "usecase_title": "Unterschriftsbeglaubigung",
+    "workflow_version": "v1",
+    "workflow_revision_hash": "c8edbea3a03accb1",
+    "bound_at": "2026-05-20T05:08:10Z",
+    "approval_state": "approved_for_demo",
+    "binding_policy": "Akte bleibt auf dieser Workflow-Version, bis ein dokumentierter Versionswechsel erfasst wird.",
+    "new_matter_policy": "Neue Akten nutzen die aktuell freigegebene Kanzlei-Workflow-Version.",
+    "artifacts": [
+      {
+        "type": "bpmn",
+        "path": "bpmn/usecases/unterschriftsbeglaubigung.bpmn",
+        "sha256": "61c1f573174cb8bf1f3984b198a7350ca3dfd4bb1f3e46c0d0b02f6afdbca1e5"
+      },
+      {
+        "type": "checklist",
+        "path": "usecases/unterschriftsbeglaubigung/knowledge-graph.graph.json",
+        "sha256": "f8016b56fe801e5d603d7d21bbdd354381009fd29aa56b704161798a096d3253"
+      }
+    ]
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "schema_version": "nac.person/v0.1",
+  "person_id": "PER-UVZ-2026-0002-MANDANT",
+  "type": "natural_person",
+  "display_name": "Erika Mustermann",
+  "roles": [
+    "client"
+  ],
+  "data_classification": "synthetic_personal_data"
+}

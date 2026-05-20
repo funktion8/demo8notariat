@@ -2,6 +2,13 @@
   "schema_version": "nac.index-persons/v0.1",
   "persons": [
     {
+      "person_id": "PER-DEMO-KAEUFER-BEN-LANGE",
+      "display_name": "Ben Lange",
+      "roles": [
+        "buyer"
+      ]
+    },
+    {
       "person_id": "PER-DEMO-NOTAR-OFUNK",
       "display_name": "Notar Dr. Otto Funk",
       "roles": [
@@ -16,10 +23,17 @@
       ]
     },
     {
-      "person_id": "PER-DEMO-KAEUFER-BEN-LANGE",
-      "display_name": "Ben Lange",
+      "person_id": "PER-UVZ-2026-0002-BETEILIGT",
+      "display_name": "Erika Mustermann",
       "roles": [
-        "buyer"
+        "participant"
+      ]
+    },
+    {
+      "person_id": "PER-UVZ-2026-0002-MANDANT",
+      "display_name": "Erika Mustermann",
+      "roles": [
+        "client"
       ]
     }
   ]

@@ -1,0 +1,16 @@
+{
+  "schema_version": "nac.matter-participants/v0.1",
+  "matter_id": "UVZ-2026-0002",
+  "participants": [
+    {
+      "person_id": "PER-UVZ-2026-0002-MANDANT",
+      "role": "client",
+      "signing_required": false
+    },
+    {
+      "person_id": "PER-UVZ-2026-0002-BETEILIGT",
+      "role": "participant",
+      "signing_required": true
+    }
+  ]
+}

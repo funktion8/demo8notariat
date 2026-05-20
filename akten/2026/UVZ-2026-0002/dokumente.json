@@ -1,0 +1,11 @@
+{
+  "schema_version": "nac.matter-documents/v0.1",
+  "matter_id": "UVZ-2026-0002",
+  "documents": [
+    {
+      "document_id": "DOC-UVZ-2026-0002-UNTERLAGE",
+      "role": "input_document",
+      "status": "expected"
+    }
+  ]
+}
