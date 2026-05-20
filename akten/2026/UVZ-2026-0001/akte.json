@@ -45,5 +45,6 @@
         "sha256": "9bc96b288a99b3e2fef588f98404b62dca005570e9aa0a8e9871548521e130d0"
       }
     ]
-  }
+  },
+  "checklist_state_path": "akten/2026/UVZ-2026-0001/checkliste.json"
 }

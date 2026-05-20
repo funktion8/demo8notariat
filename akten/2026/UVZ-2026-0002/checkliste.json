@@ -1,0 +1,225 @@
+{
+  "schema_version": "nac.matter-checklist-state/v0.1",
+  "usecase_slug": "unterschriftsbeglaubigung",
+  "usecase_title": "Unterschriftsbeglaubigung Erika Mustermann",
+  "status": "open",
+  "bound_at": "2026-05-20T05:08:10Z",
+  "workflow_id": "unterschriftsbeglaubigung:kanzlei-standard",
+  "workflow_version": "v1",
+  "workflow_revision_hash": "c8edbea3a03accb1",
+  "source": {
+    "type": "knowledge_graph",
+    "path": "usecases/unterschriftsbeglaubigung/knowledge-graph.graph.json",
+    "sha256": "f8016b56fe801e5d603d7d21bbdd354381009fd29aa56b704161798a096d3253"
+  },
+  "version_policy": "Dieser Checklistenstand ist aktenbezogen eingefroren und folgt nicht automatisch späteren Kanzlei-Workflow-Versionen.",
+  "sections": [
+    {
+      "id": "required_information",
+      "label": "Offene Angaben",
+      "items": [
+        {
+          "id": "signer.identity",
+          "label": "Unterzeichner Identität",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Unterzeichner Identität benötigt?",
+          "required_for": [
+            "identity_gate",
+            "certificate"
+          ]
+        },
+        {
+          "id": "document.purpose",
+          "label": "Dokument Zweck",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Dokument Zweck benötigt?",
+          "required_for": [
+            "certificate",
+            "routing"
+          ]
+        },
+        {
+          "id": "signature.mode",
+          "label": "Unterschrift Modus",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Unterschrift Modus benötigt?",
+          "required_for": [
+            "certificate"
+          ]
+        },
+        {
+          "id": "language.understanding",
+          "label": "Sprache Verständnis",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Sprache Verständnis benötigt?",
+          "required_for": [
+            "legal_review",
+            "appointment"
+          ]
+        },
+        {
+          "id": "representation.context",
+          "label": "Representation Kontext",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Representation Kontext benötigt?",
+          "required_for": [
+            "authority_review"
+          ]
+        },
+        {
+          "id": "copies.routing",
+          "label": "Ausfertigungen Weiterleitung",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Ausfertigungen Weiterleitung benötigt?",
+          "required_for": [
+            "closing"
+          ]
+        },
+        {
+          "id": "special.form",
+          "label": "Sonderfall Form",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Sonderfall Form benötigt?",
+          "required_for": [
+            "legal_review",
+            "routing"
+          ]
+        },
+        {
+          "id": "fee.metadata",
+          "label": "Gebühr Metadaten",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Gebühr Metadaten benötigt?",
+          "required_for": [
+            "closing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "label": "Dokumente",
+      "items": [
+        {
+          "id": "doc.signed_document",
+          "label": "Dokument: Unterzeichnet Dokument",
+          "type": "document",
+          "source_key": "documents",
+          "status": "open",
+          "owner_role": ""
+        },
+        {
+          "id": "doc.certification_note",
+          "label": "Dokument: Beglaubigung Vermerk",
+          "type": "document",
+          "source_key": "documents",
+          "status": "open",
+          "owner_role": ""
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "Entscheidungen",
+      "items": [
+        {
+          "id": "decision.certification_scope",
+          "label": "Entscheidung: Beglaubigung Umfang",
+          "type": "decision",
+          "source_key": "decisions",
+          "status": "open",
+          "owner_role": "",
+          "options": [
+            "signature_only",
+            "with_authority_evidence",
+            "blocked",
+            "unknown"
+          ]
+        },
+        {
+          "id": "decision.routing",
+          "label": "Entscheidung: Weiterleitung",
+          "type": "decision",
+          "source_key": "decisions",
+          "status": "open",
+          "owner_role": "",
+          "options": [
+            "paper",
+            "electronic",
+            "register_filing",
+            "foreign_use",
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gates",
+      "label": "Prüfgates",
+      "items": [
+        {
+          "id": "gate.identity_and_signature",
+          "label": "Prüfgate: Identität and Unterschrift",
+          "type": "gate",
+          "source_key": "gates",
+          "status": "open",
+          "owner_role": "notary"
+        },
+        {
+          "id": "gate.form_route",
+          "label": "Prüfgate: Form Route",
+          "type": "gate",
+          "source_key": "gates",
+          "status": "open",
+          "owner_role": "notary_clerk"
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "Nachweise",
+      "items": [
+        {
+          "id": "evidence.identity_check",
+          "label": "Nachweis: Identität Prüfung",
+          "type": "evidence",
+          "source_key": "evidence",
+          "status": "open",
+          "owner_role": ""
+        },
+        {
+          "id": "evidence.delivery_trace",
+          "label": "Nachweis: Zustellung Nachverfolgung",
+          "type": "evidence",
+          "source_key": "evidence",
+          "status": "open",
+          "owner_role": ""
+        }
+      ]
+    }
+  ]
+}

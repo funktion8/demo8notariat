@@ -1,0 +1,250 @@
+{
+  "schema_version": "nac.matter-checklist-state/v0.1",
+  "usecase_slug": "immobilienkaufvertrag",
+  "usecase_title": "Immobilienkaufvertrag Berger/Lange",
+  "status": "open",
+  "bound_at": "2026-05-19T15:36:59Z",
+  "workflow_id": "immobilienkaufvertrag:kanzlei-standard",
+  "workflow_version": "v1",
+  "workflow_revision_hash": "b52f600b2a9556c1",
+  "source": {
+    "type": "knowledge_graph",
+    "path": "usecases/immobilienkaufvertrag/knowledge-graph.graph.json",
+    "sha256": "9bc96b288a99b3e2fef588f98404b62dca005570e9aa0a8e9871548521e130d0"
+  },
+  "version_policy": "Dieser Checklistenstand ist aktenbezogen eingefroren und folgt nicht automatisch späteren Kanzlei-Workflow-Versionen.",
+  "sections": [
+    {
+      "id": "required_information",
+      "label": "Offene Angaben",
+      "items": [
+        {
+          "id": "property.identity",
+          "label": "Grundstücksidentität",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für die Grundstücksidentität benötigt?",
+          "required_for": [
+            "land_register_review",
+            "drafting",
+            "execution"
+          ]
+        },
+        {
+          "id": "seller.identity",
+          "label": "Identität Verkäufer",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für die Identität des Verkäufers benötigt?",
+          "required_for": [
+            "identity_gate",
+            "drafting",
+            "appointment"
+          ]
+        },
+        {
+          "id": "buyer.identity",
+          "label": "Identität Käufer",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für die Identität des Käufers benötigt?",
+          "required_for": [
+            "identity_gate",
+            "drafting",
+            "tax_notifications"
+          ]
+        },
+        {
+          "id": "purchase.price",
+          "label": "Kaufpreis und Fälligkeitsmodell",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für Kaufpreis und Fälligkeitsmodell benötigt?",
+          "required_for": [
+            "drafting",
+            "maturity_tracking",
+            "execution"
+          ]
+        },
+        {
+          "id": "encumbrances.current",
+          "label": "Aktueller Belastungsstand",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für den aktuellen Belastungsstand benötigt?",
+          "required_for": [
+            "land_register_review",
+            "bank_coordination",
+            "drafting"
+          ]
+        },
+        {
+          "id": "financing.required",
+          "label": "Finanzierung erforderlich",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für die erforderliche Finanzierung benötigt?",
+          "required_for": [
+            "bank_coordination",
+            "appointment_planning"
+          ]
+        },
+        {
+          "id": "possession.transfer",
+          "label": "Besitzübergang",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für den Besitzübergang benötigt?",
+          "required_for": [
+            "drafting",
+            "closing"
+          ]
+        },
+        {
+          "id": "public.approvals",
+          "label": "Öffentlich-rechtliche Genehmigungen",
+          "type": "information",
+          "source_key": "required_information",
+          "status": "open",
+          "owner_role": "notary_clerk",
+          "question": "Welche Angaben, Nachweise und Prüfpunkte werden für öffentlich-rechtliche Genehmigungen benötigt?",
+          "required_for": [
+            "execution",
+            "land_register_filing"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "documents",
+      "label": "Dokumente",
+      "items": [
+        {
+          "id": "doc.land_register_excerpt",
+          "label": "Dokument: aktueller Grundbuchauszug",
+          "type": "document",
+          "source_key": "documents",
+          "status": "open",
+          "owner_role": ""
+        },
+        {
+          "id": "doc.contract_draft",
+          "label": "Dokument: Vertragsentwurf",
+          "type": "document",
+          "source_key": "documents",
+          "status": "open",
+          "owner_role": ""
+        },
+        {
+          "id": "doc.approvals",
+          "label": "Dokument: Genehmigungen",
+          "type": "document",
+          "source_key": "documents",
+          "status": "open",
+          "owner_role": ""
+        }
+      ]
+    },
+    {
+      "id": "decisions",
+      "label": "Entscheidungen",
+      "items": [
+        {
+          "id": "decision.financing_route",
+          "label": "Entscheidung: Finanzierungsweg",
+          "type": "decision",
+          "source_key": "decisions",
+          "status": "open",
+          "owner_role": "",
+          "options": [
+            "separate",
+            "combined",
+            "not_required",
+            "unknown"
+          ]
+        },
+        {
+          "id": "decision.encumbrance_handling",
+          "label": "Entscheidung: Umgang mit Belastungen",
+          "type": "decision",
+          "source_key": "decisions",
+          "status": "open",
+          "owner_role": "",
+          "options": [
+            "delete",
+            "assume",
+            "preserve",
+            "mixed",
+            "unknown"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "gates",
+      "label": "Prüfgates",
+      "items": [
+        {
+          "id": "gate.land_register_review",
+          "label": "Prüfgate: Grundbuchprüfung",
+          "type": "gate",
+          "source_key": "gates",
+          "status": "open",
+          "owner_role": "notary"
+        },
+        {
+          "id": "gate.consumer_draft_period",
+          "label": "Prüfgate: Verbraucher-Entwurfsfrist",
+          "type": "gate",
+          "source_key": "gates",
+          "status": "open",
+          "owner_role": "notary"
+        },
+        {
+          "id": "gate.execution_readiness",
+          "label": "Prüfgate: Vollzugsbereitschaft",
+          "type": "gate",
+          "source_key": "gates",
+          "status": "open",
+          "owner_role": "notary_clerk"
+        }
+      ]
+    },
+    {
+      "id": "evidence",
+      "label": "Nachweise",
+      "items": [
+        {
+          "id": "evidence.intake_review",
+          "label": "Nachweis: Aufnahmeprüfung und Entwurfsfreigabe",
+          "type": "evidence",
+          "source_key": "evidence",
+          "status": "open",
+          "owner_role": ""
+        },
+        {
+          "id": "evidence.filing_trace",
+          "label": "Nachweis: Einreichungs- und Vollzugsnachverfolgung",
+          "type": "evidence",
+          "source_key": "evidence",
+          "status": "open",
+          "owner_role": ""
+        }
+      ]
+    }
+  ]
+}

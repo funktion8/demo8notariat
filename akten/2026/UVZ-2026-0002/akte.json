@@ -6,10 +6,10 @@
   "case_type": "unterschriftsbeglaubigung",
   "usecase_slug": "unterschriftsbeglaubigung",
   "status": "open",
-  "status_reason": "Ausweisdaten aus synthetischem Testscan übernommen, manuelle Prüfung offen",
+  "status_reason": "",
   "owner_role": "notary_clerk",
   "opened_at": "2026-05-20T05:08:10Z",
-  "updated_at": "2026-05-20T05:08:10Z",
+  "updated_at": "2026-05-20T05:37:32Z",
   "participant_person_ids": [
     "PER-UVZ-2026-0002-MANDANT",
     "PER-UVZ-2026-0002-BETEILIGT"
@@ -52,5 +52,6 @@
         "sha256": "f8016b56fe801e5d603d7d21bbdd354381009fd29aa56b704161798a096d3253"
       }
     ]
-  }
+  },
+  "checklist_state_path": "akten/2026/UVZ-2026-0002/checkliste.json"
 }
